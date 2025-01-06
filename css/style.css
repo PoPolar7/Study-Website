@@ -9,7 +9,7 @@
   width: 1200px;
 }
 
-#header {
+header {
   width: 100%;
   height: 100px;
   background-color: blue;
@@ -22,8 +22,8 @@
   background-color: indigo;
 }
 
-#nav {
-  clear: right;
+nav {
+  float: right;
   width: 900px;
   height: 100px;
   background-color: green;
@@ -56,7 +56,7 @@
   background-color: skyblue;
 }
 
-#footer {
+footer {
   width: 100%;
   height: 100px;
   background-color: gray;
