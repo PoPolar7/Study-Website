@@ -102,12 +102,22 @@ ul {
   color: #f00;
 }
 
+/* 슬라이드쇼 */
 #slideshow {
   clear: both; /* float 해제 */
   width: 100%;
   height: 300px;
-  background-color: orange;
   overflow: hidden; /* 영역 넘치면 감춤춤 */
+  position: relative;
+}
+
+#slides {
+  position: absolute;
+}
+
+#slides > img {
+  width: 100%;
+  float: left;
 }
 
 #contents {
