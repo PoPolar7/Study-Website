@@ -54,6 +54,7 @@ ul {
 
 #topmenu > li {
   float: left;
+  position: relative; /* 서브 메뉴를 absolute로 만들기 위해 부모요소 relative로 지정 */
 }
 
 #topmenu > li > a {
@@ -61,7 +62,7 @@ ul {
   color: #fff;
   font-weight: 600;
   text-shadow: 0 1px #07c;
-  padding: 20px 60px;
+  padding: 40px 60px;
 }
 
 #topmenu > li > a > span {
@@ -71,6 +72,34 @@ ul {
 #topmenu > li > a:hover {
   color: #000;
   text-shadow: 0 -1px #07c; /* 글자가 굵어지지 않도록 */
+}
+
+#topmenu > li > ul {
+  display: none; /* 서브메뉴 숨김 */
+  position: absolute; /* 절대 위치 */
+  width: 160px;
+  left: 20px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.6); /* 배경 투명색 */
+}
+
+#topmenu li > ul > li {
+  padding: 10px 10px 10px 30px;
+}
+
+#topmenu li > ul > li > a {
+  font-size: 14px;
+  padding: 10px;
+  color: #000;
+}
+
+#topmenu li:hover > ul {
+  display: block; /* 메인 항목 위로 오버시 서브 표시 */
+  z-index: 10; /* 슬라이드쇼에 가려지지 않게 조절 */
+}
+
+#topmenu li > ul > li > a:hover {
+  color: #f00;
 }
 
 #slideshow {
