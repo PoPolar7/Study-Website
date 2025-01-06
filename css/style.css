@@ -16,7 +16,7 @@ header {
   height: 100px;
   background-color: #07c;
 }
-
+/* 로고 */
 #logo {
   float: left; /* 왼쪽으로 정렬 */
   width: 250px;
@@ -37,11 +37,40 @@ a {
   text-decoration: none;
 }
 
+/* 네비게이션 */
 nav {
   float: right;
   width: 900px;
   height: 100px;
-  background-color: green;
+}
+
+ul {
+  list-style: none;
+}
+
+#topmenu {
+  height: 60px;
+}
+
+#topmenu > li {
+  float: left;
+}
+
+#topmenu > li > a {
+  display: block; /* a태그를 블록 요소로 변환 */
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 1px #07c;
+  padding: 20px 60px;
+}
+
+#topmenu > li > a > span {
+  font-size: 0.5em; /* 서브메뉴가 있는 항목에 화살표 표시 */
+}
+
+#topmenu > li > a:hover {
+  color: #000;
+  text-shadow: 0 -1px #07c; /* 글자가 굵어지지 않도록 */
 }
 
 #slideshow {
