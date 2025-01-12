@@ -157,11 +157,68 @@ button:focus {
   height: 300px;
 }
 
+/* 탭 메뉴 */
 #tabmenu {
   float: left; /* 왼쪽으로 정렬 */
   width: 600px;
   height: 100%;
-  background-color: violet;
+  margin-top: 10px;
+}
+
+#tabmenu input[type="radio"] {
+  display: none; /* 라디오 버튼 숨김 */
+}
+
+#tabmenu label {
+  /* 탭 제목 스타일 */
+  display: inline-block; /* 탭을 가로롤 배치 */
+  margin: 0 0;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #aaa;
+  border: 1px solid transparent;
+}
+
+#tabmenu label:hover {
+  color: #222;
+  curosr: pointer; /* 마우스 오버시 포인터 모양 */
+}
+
+#tabmenu input:checked + label {
+  /* 활성화된 탭 제목 스타일 */
+  color: #b00;
+  border: 1px solid #ddd;
+  background-color: #eee;
+}
+
+.tabcontent {
+  /* 탭 내용 스타일 */
+  display: none; /* 탭 내용 숨김 */
+  padding: 20px 0 0;
+  border: 1px solid #ddd;
+}
+
+.tabcontent h2 {
+  display: none; /* 탭 내용 제목 숨김 */
+}
+
+.notice ul {
+  list-style: none;
+  margin-left: 30px;
+}
+
+#notice ul li {
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+#gallery ul li {
+  display: inline; /* 이미지를 가로로 배치 */
+}
+
+#tab1: checked ~#notice, #tab2 checked ~#gallery {
+  display: block; /* 탭 내용 표시 */
 }
 
 #links {
