@@ -223,12 +223,52 @@ button:focus {
   display: block;
 }
 
+/* 링크 */
 #links {
   float: right; /* 오른쪽으로 정렬 */
   width: 600px;
   height: 100%;
   margin-top: 20px;
-  background-color: skyblue;
+}
+
+#links ul {
+  padding: 0;
+  overflow: hidden;
+}
+
+#links ul li {
+  float: left;
+  width: 33%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#links ul li a span {
+  display: block;
+  margin: 0 auto; /* 가운데 정렬 */
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 1px solid #ddd;
+  line-height: 150px; /* height값에 맞추어 수직 가운데 정렬 */
+}
+
+#quick-icon1 {
+  background-image: url("../images/icon-1.jpg");
+}
+
+#quick-icon2 {
+  background-image: url("../images/icon-2.jpg");
+}
+
+#quick-icon3 {
+  background-image: url("../images/icon-3.jpg");
+}
+
+#links ul li a p {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #666;
 }
 
 footer {
